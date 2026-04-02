@@ -2,8 +2,12 @@
  * 本地切图目录：`public/figma-assets/`（由 Figma MCP asset 导出，避免 URL 过期）
  * 重新拉取：npm run figma:assets
  * 设计文件 fileKey: E2P0A8fSPLQ9jtZTZiwDvB；节点 14218:272 / 14218:9867 等
+ *
+ * 与 `next.config.ts` 的 `basePath` 对齐（由 `NEXT_PUBLIC_BASE_PATH` 注入），
+ * 便于 GitHub Pages 子路径部署（如 `/weaponRefine`）。
  */
-const B = "/figma-assets";
+const publicBase = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
+const B = `${publicBase}/figma-assets`;
 
 function png(id: string) {
   return `${B}/${id}.png`;
