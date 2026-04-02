@@ -1,5 +1,20 @@
 # Weapon Refine（武器调校界面）
 
+## 直接访问（免部署 / 免编译）
+
+如果你只是想体验页面，不需要安装任何开发环境，直接打开：
+
+- 在线地址：[https://roxanne-yi.github.io/weaponRefine/](https://roxanne-yi.github.io/weaponRefine/)
+
+适合非代码岗位（策划、设计、产品、运营）快速查看效果。
+
+**使用方式（零门槛）**
+1. 打开上面的链接。
+2. 等待页面加载完成（首次可能稍慢）。
+3. 直接在页面里体验调校流程（不需要下载项目，也不需要运行命令）。
+
+---
+
 基于 **Next.js** 与 **Figma** 设计稿还原的游戏内「武器调校 / Refine」单页演示：包含顶栏、左侧详情、中央武器展示、右侧调校流程（品质揭示、Buff 选择、Combat stats、消耗材料与 REFINE / SAVE 等）。状态由 **Zustand** 管理，动效使用 **Framer Motion**。
 
 ---
